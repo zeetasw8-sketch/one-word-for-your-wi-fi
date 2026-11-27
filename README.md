@@ -22,3 +22,9 @@ One word (8 characters): the word for your Wi-Fi, as you live it.
 - `line.txt` — the entry, exactly as submitted.
 - `main.ts` — reads `line.txt`, checks the 20-character gate, writes
   `/output/entry.txt`.
+
+## Verification
+
+- `main.ts` run locally writes `/output/entry.txt` byte-for-byte from
+  `line.txt`: "Ghosting", 8 characters, one word, no trailing newline.
+- Gate: 1-20 characters, UTF-8, not only whitespace — passes.
